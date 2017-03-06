@@ -1,62 +1,87 @@
 <!Doctype html>
-<html ng-app="ui.bootstrap.demo">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/MusicSchool.css" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Music School</title>
+    <link href="css/MusicSchool.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="../images/music-icon.png"/>
 </head>
 <body>
+<header>
+    <div id="header-inner">
+        <a href="index.html" id="logo"></a>
+        <nav>
+            <a href="" id="menu-icon"></a>
+            <ul>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Calender</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-<div class="topmenu col-12">
-    <header class="col-6">
-        <h3>Music School</h3>
-    </header>
+<!-- End of header-->
 
-    <ul class="topmenu-list col-6">
-        <li class="col-1">
-            <a href="">About</a>
+<section class="carousel">
+    <div id="inner-carousel">
+        <img id="bottom" src="../images/1.jpg">
+        <!--<img class="top" src="../images/2.jpg">-->
+    </div>
+</section>
+
+<section id="second-section">
+    <article id="second-section-article">
+        <img src="../images/old_music_score_background-wallpaper-2560x1600.jpg">
+    </article>
+    <aside id="second-section-aside">
+        <h2>MUSIC IS PASSION</h2>
+        <p>
+            Music, at its essence, is what gives us memories.
+            And the longer a song has existed in our lives, the more memories we have of it.
+        </p>
+    </aside>
+</section>
+
+<section id="third-section">
+    <article>
+        <img src="../images/old_music_score-wallpaper-2560x1600.jpg">
+    </article>
+    <aside id="third-section-aside">
+        <h2>LIFE IS AWESOME</h2>
+        <p>
+            Learn to enjoy every minute of your life. Be happy now.
+            Don't wait for something outside of yourself to make you happy in the future.
+            Think how really precious is the time you have to spend, whether it's at work or with your family.
+            Every minute should be enjoyed and savored.
+        </p>
+    </aside>
+</section>
+
+<!--Begin Social footer-->
+<footer>
+    <ul class="social-footer">
+        <li>
+            <a href="https://www.facebook.com/PeoplesMusicSchool/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         </li>
-        <li class="col-1">
-            <a href="">Gallery</a>
+        <li>
+            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
         </li>
-        <li class="col-1">
-            <a href="">Home</a>
+        <li>
+            <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         </li>
     </ul>
-</div>
-
-
-<section class="first-section">
-
-</section>
-
-<section class="second-section">
-
-</section>
-
-<footer>
-    <span>@CopyRight 2017</span>
 </footer>
+<!--End Social footer-->
 
-
-
-
-<script src="../bower_components/angular/angular.js"></script>
-<script src="../bower_components/angular-animate/angular-animate.js"></script>
-<script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
-<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-<script src="hompage/example.js"></script>
-<script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-</script>
-</div>
+<footer class="copyright-footer">
+    <p>&copy; Copyright 2017: Music School</p>
+</footer>
 </body>
 </html>
