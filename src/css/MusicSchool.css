@@ -12,10 +12,9 @@ html, body {
 }
 
 body {
-    background:rgba(196, 120, 0, 0.66);
+    background: #fffdfd;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background: linear-gradient(to bottom left, rgba(196, 120, 0, 0.66), floralwhite);
     color: #122b40;
     font-family: 'Alegreya', sans-serif;
     margin: 0;
@@ -29,6 +28,13 @@ h2 {
     padding-top: 2%;
 }
 
+h1 {
+    font-size: 350%;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 2%;
+}
+
 p {
     font-size: 160%;
     line-height: 150%;
@@ -37,15 +43,26 @@ p {
     text-align: justify;
 }
 
+ul {
+    list-style-type: none;
+}
+
+.line-separator{
+    height:1px;
+    background:#717171;
+    border-bottom:1px solid #313030;
+
+}
+
 header {
     position: fixed;
     width: 100%;
     height: 86px;
-    background: rgb(233, 121, 54);
-    background: -webkit-linear-gradient(to left bottom,rgb(233, 121, 54), floralwhite);; /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(to left bottom, rgb(233, 121, 54) , floralwhite);; /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(to left bottom, rgb(233, 121, 54) , floralwhite);; /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to left bottom, rgb(233, 121, 54) , floralwhite);
+    background: #233237;
+    background: -webkit-linear-gradient(to left bottom, #233237 , rgba(35, 50, 55, 0.36)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(to left bottom, #233237 , rgba(35, 50, 55, 0.36)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(to left bottom, #233237 , rgba(35, 50, 55, 0.36)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left bottom, #233237 , rgba(35, 50, 55, 0.36));
     box-shadow: 0 10px 30px rgba(0,0,0,0.12), 0 10px 20px rgba(0,0,0,0.24);
 }
 
@@ -84,7 +101,6 @@ a:hover#menu-icon {
 }
 
 nav ul {
-    list-style-type: none;
     height: inherit;
 }
 
@@ -97,12 +113,12 @@ nav ul li {
 }
 
 nav ul li:hover {
-    background-color: #a75135;
+    background-color: rgba(162, 162, 167, 0.44);
 }
 
 nav ul li a {
     display: block;
-    color: #a75135;
+    color: #eceaff;
     height: inherit;
     text-align: center;
     text-decoration: none;
@@ -110,11 +126,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffe1d0;
+    color: #eceaff;
 }
 
 .current {
-    color: #ffe1d0;
+    color: white;
 }
 
 /* End of Navigation*/
@@ -122,7 +138,7 @@ nav ul li a:hover {
     position: relative;
     height: 100vh;
     width: 100%;
-    /*top: 86px;*/
+    top: 86px;
     /*bottom: 200px;*/
     z-index: -1;
 }
@@ -186,83 +202,111 @@ nav ul li a:hover {
 #second-section {
     position: relative;
     top: 100vh;
-    height: 60%;
+    height: 768px;
     /*width: 100%;*/
-    /*max-height: 1080px;*/
+    max-height: 1080px;
     /*margin: 0 auto;*/
 }
 
-#second-section-article {
-    margin: 0 auto;
-    float: right;
-    width: 70%;
-}
+/*#second-section-article {*/
+    /*margin: 0 auto;*/
+    /*float: right;*/
+    /*width: 70%;*/
+/*}*/
 
-#second-section img {
-    width: 100%;
-    height: 100%;
-    max-height: 900px;
-    margin-bottom: -4px;
-}
+/*#second-section img {*/
+    /*width: 100%;*/
+    /*height: 768px;*/
+    /*max-height: 900px;*/
+    /*margin-bottom: -4px;*/
+/*}*/
 
 #second-section-aside {
-    color: #4f0000;
-    width: 30%;
+    color: #f7fcff;
+    width: 100%;
+    height: inherit;
     float: left;
     text-align: center;
     padding: 10% 0 10% 0;
 }
 
+#second-section-aside h2 {
+    background-color: #1A2930;
+    padding: 2% 0 2% 0 ;
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); /* Safari */
+    transform: skewX(8deg);
+}
+
+#second-section-aside h2.h2-one {
+    margin: 2% 40% 2% 2%;
+}
+
+#second-section-aside h2.h2-two {
+    margin: 2% 45% 2% 2%;
+}
+
+#second-section-aside p {
+    color: #1A2930;
+    width: 55%;
+    float: right;
+}
+
 #third-section {
     position: relative;
     top: 100vh;
+    height: 1080px;
     /*height: 60%;*/
     /*width: 100%;*/
     /*max-height: 1080px;*/
     /*margin: 0 auto;*/
 }
 
-#third-section-article {
-    margin: 0 auto;
-    float: left;
-    width: 70%;
-}
-
 #third-section img {
+    position: relative;
     margin: 0 auto;
     width: 100%;
     height: 100%;
-    max-height: 900px;
+    max-height: 1080px;
     margin-bottom: -4px;
 }
 
-#third-section aside {
-    color: #4f0000;
-    width: 30%;
-    min-height: 100%;
-    float: right;
+#third-section h2 {
+    position: absolute;
+    top: 50%;
+    color: #f7fcff;
     text-align: justify;
-    padding: 10% 0 10% 0;
+    text-decoration: underline;
+    padding: 2% 50% 1% 30%;
 }
 
-footer {
+#third-section p {
+    position: absolute;
+    top: 60%;
+    color: #f7fcff;
+    text-align: justify;
+    padding: 1% 30% 1% 30%;
+}
+
+#footer {
     position: relative;
-    top: 198vh;
+    top: 138vh;
     width: 100%;
     height: 200px;
-    background: rgb(251, 203, 178);
-    background: -webkit-linear-gradient(to right top, rgb(132, 23, 5) , rgb(251, 203, 178)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(to right top, rgb(132, 23, 5) , rgb(251, 203, 178)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(to right top, rgb(132, 23, 5) , rgb(251, 203, 178)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right top, rgb(132, 23, 5) , rgb(251, 203, 178));
+    background: #1A2930;
+    background: -webkit-linear-gradient(to right top, #1A2930 , whitesmoke); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(to right top, #1A2930, whitesmoke); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(to right top, #1A2930, whitesmoke); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right top, #1A2930, #828081);
 
 }
 
-footer p {
+#footer p {
+    font-size: 100%;
     position: absolute;
     bottom: 0;
     width: 25%;
-    margin: 0%;
+    margin: 0 auto;
     padding: 0%;
     color: whitesmoke;
 }
@@ -270,7 +314,6 @@ footer p {
 .social-footer {
     position: absolute;
     bottom: 0px;
-    list-style-type: none;
     text-align: center;
     width: 100%;
     height: 160px;
@@ -288,4 +331,37 @@ footer p {
     height: 10%;
 }
 
-@include animation(slider-lg ease-in-out 30s both infinite);
+.about-container {
+    position: relative;
+    top: 86px;
+    max-height: 1080px;
+}
+
+
+/* Begin of About HTML page */
+section#about-intro img {
+    margin: 2% 0% 2% 25%;
+}
+
+section#about-intro p {
+    font-size: 180%;
+}
+
+section#team li {
+    float: left;
+}
+
+section#team figure {
+    margin: 2% 2% 20% 30%;
+    border: 2px solid #122b40;
+}
+
+section#team figure img {
+    padding: 2% 2% 2% 10%;
+}
+
+section#team h1 {
+    text-decoration: underline;
+    margin: 0 0 3% 0;
+}
+/* End of About page */
